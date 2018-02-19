@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab');
+
+@font-face
+{
+    font-family: "DroidSerif";
+    src:url(vendor/DroidSerif-Italic.ttf);
+};
+
+@font-face
+{
+    font-family: "WisdomScript";
+    src:url(vendor/WisdomScript.otf);
+};
+$font-logo: 'WisdomScript', serif;
+$font-title: 'Montserrat', sans-serif;
+$font-sub-title: 'Roboto Slab', serif;
+
+$yellow-site:rgb(254, 209, 54);
+$grey-site: #777777;
+$grey-background: rgb(247, 247, 247);
