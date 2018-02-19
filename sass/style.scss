@@ -1,20 +1,99 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto+Slab');
 
-@font-face
-{
-    font-family: "DroidSerif";
-    src:url(vendor/DroidSerif-Italic.ttf);
-};
+@font-face {
+    font-family: 'droid_serifitalic';
+    src: url('/vendor/DroidSerif-Italic-webfont.eot');
+    src: url('/vendor/DroidSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/vendor/DroidSerif-Italic-webfont.woff') format('woff'),
+         url('/vendor/DroidSerif-Italic-webfont.ttf') format('truetype'),
+}
 
-@font-face
-{
-    font-family: "WisdomScript";
-    src:url(vendor/WisdomScript.otf);
+@font-face {
+    font-family: 'WisdomScriptAJ';
+	src: url('/vendor/WisdomScriptAJ.eot');
+    src: local('WisdomScriptAJ'), 
+    url('/vendor/WisdomScriptAJ.woff') format('woff'), 
+    url('/vendor/WisdomScriptAJ.ttf') format('truetype');
 };
-$font-logo: 'WisdomScript', serif;
+$font-logo: 'WisdomScriptAJ';
 $font-title: 'Montserrat', sans-serif;
-$font-sub-title: 'Roboto Slab', serif;
+$font-sub-title: 'droid_serifitalic', serif;
+$font-paragtaph: 'Roboto Slab', serif;
+
 
 $yellow-site:rgb(254, 209, 54);
 $grey-site: #777777;
 $grey-background: rgb(247, 247, 247);
+
+.logo {
+    font-family: $font-logo;
+    color: $yellow-site;
+    font-size: 1.625rem;
+    padding-bottom: 1rem;
+    transition: 1s all;
+    &:hover {
+        color: white;
+    }
+}
+.header {
+    background-image: url('/images/BackgroundImage.png');
+    //height: 100vh;
+}
+
+.nav-link {
+    color: white;
+    font-family: $font-title;
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    transition: 1s all;
+    &:hover {
+        color: $yellow-site;
+    }
+}
+.navbar-toggler-icon {
+    color: white;
+}
+
+.jumbotron {
+    background-color: transparent;
+    text-align: center;
+}
+
+.small-slogan {
+    font-family: $font-sub-title;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.big-slogan {
+    font-family: $font-title;
+    font-weight: 700;
+    color: white;
+    font-size: 4.688rem;
+}
+
+.jumbotron .btn-primary {
+    background-color: $yellow-site;
+    border-color: $yellow-site;
+    padding: 1.563rem 3.125rem;
+    font-family: $font-title;
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    transition: 1s all;
+    &:hover {
+        background-color: white;
+        color: $yellow-site;
+    }
+}
+
+@media (min-width: 992px) { 
+    .jumbotron {
+        padding-top: 10.31rem;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+ }

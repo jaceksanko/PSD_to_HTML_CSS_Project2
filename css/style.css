@@ -1,4 +1,29 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab");
-@font-face { font-family: "DroidSerif"; src: url(vendor/DroidSerif-Italic.ttf); }
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto+Slab");
+@font-face { font-family: 'droid_serifitalic'; src: url("/vendor/DroidSerif-Italic-webfont.eot"); src: url("/vendor/DroidSerif-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("/vendor/DroidSerif-Italic-webfont.woff") format("woff"), url("/vendor/DroidSerif-Italic-webfont.ttf") format("truetype"); }
 
-@font-face { font-family: "WisdomScript"; src: url(vendor/WisdomScript.otf); }
+@font-face { font-family: 'WisdomScriptAJ'; src: url("/vendor/WisdomScriptAJ.eot"); src: local("WisdomScriptAJ"), url("/vendor/WisdomScriptAJ.woff") format("woff"), url("/vendor/WisdomScriptAJ.ttf") format("truetype"); }
+
+.logo { font-family: "WisdomScriptAJ"; color: #fed136; font-size: 1.625rem; padding-bottom: 1rem; transition: 1s all; }
+
+.logo:hover { color: white; }
+
+.header { background-image: url("/images/BackgroundImage.png"); }
+
+.nav-link { color: white; font-family: "Montserrat", sans-serif; font-weight: 500; font-size: 0.875rem; text-transform: uppercase; transition: 1s all; }
+
+.nav-link:hover { color: #fed136; }
+
+.navbar-toggler-icon { color: white; }
+
+.jumbotron { background-color: transparent; text-align: center; }
+
+.small-slogan { font-family: "droid_serifitalic", serif; color: white; font-size: 2.5rem; }
+
+.big-slogan { font-family: "Montserrat", sans-serif; font-weight: 700; color: white; font-size: 4.688rem; }
+
+.jumbotron .btn-primary { background-color: #fed136; border-color: #fed136; padding: 1.563rem 3.125rem; font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125rem; text-transform: uppercase; transition: 1s all; }
+
+.jumbotron .btn-primary:hover { background-color: white; color: #fed136; }
+
+@media (min-width: 992px) { .jumbotron { padding-top: 10.31rem; }
+  .navbar-expand-lg .navbar-nav .nav-link { padding-left: 1.25rem; padding-right: 1.25rem; } }
