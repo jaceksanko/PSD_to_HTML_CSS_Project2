@@ -25,6 +25,46 @@ $yellow-site:rgb(254, 209, 54);
 $grey-site: #777777;
 $grey-background: rgb(247, 247, 247);
 
+h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 4.375rem;
+    font-family: $font-title;
+    font-weight: 700;
+    padding-top: 6.25rem;
+    margin-bottom: 0;
+}
+
+h6 {
+    font-family: $font-sub-title;
+    color: $grey-site;
+    padding-bottom: 3.875rem;
+}
+
+h5 {
+    font-family: $font-title;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+}
+
+h4 {
+    font-family: $font-sub-title;
+    color: $grey-site;
+    font-size: 0.875rem;
+}
+
+p {
+    font-family: $font-paragtaph;
+    font-size: 0.875rem;
+    color: $grey-site;
+}
+
+section {
+    padding-bottom: 7.5rem;
+}
+
+/* navigation */
 .logo {
     font-family: $font-logo;
     color: $yellow-site;
@@ -37,7 +77,6 @@ $grey-background: rgb(247, 247, 247);
 }
 .header {
     background-image: url('/images/BackgroundImage.png');
-    //height: 100vh;
 }
 
 .nav-link {
@@ -54,6 +93,8 @@ $grey-background: rgb(247, 247, 247);
 .navbar-toggler-icon {
     color: white;
 }
+
+/* Jumbotron */
 
 .jumbotron {
     background-color: transparent;
@@ -87,6 +128,87 @@ $grey-background: rgb(247, 247, 247);
         color: $yellow-site;
     }
 }
+
+/* services */
+
+.title {
+    text-align: center;
+    
+}
+
+.services-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.563rem;
+}
+
+.circle {
+    border: 0.1875rem solid $yellow-site;
+    border-radius: 50%;
+    width: 4.375rem;
+    height: 4.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.circle-icon-first {
+    font-size: 2.25rem;
+    color: $yellow-site;
+}
+.circle-icon-second {
+    position: absolute;
+}
+
+.fa-check {
+    top:1.25rem;
+    color: $yellow-site;
+}
+
+.fa-utensil-spoon {
+    transform: rotate(-45deg);
+    font-size: 0.75rem;
+    bottom: 1.125rem;
+    color: white;
+}
+
+.services-info {
+    text-align: center;
+}
+
+
+
+.portfolio {
+    background-color: $grey-background;
+}
+
+.card {
+    width: 18rem;
+    border: none;
+}
+
+.card-body {
+    text-align: center;
+    h5 {
+        margin-bottom: 0;
+    }
+}
+
+/* portfolio */
+
+.portfolio-break {
+    margin-top: 3.125rem;
+}
+
+
+/* about us */
+
+.about-info {
+    text-align: right;
+}
+
 
 @media (min-width: 992px) { 
     .jumbotron {

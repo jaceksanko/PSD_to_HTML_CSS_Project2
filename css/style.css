@@ -3,6 +3,19 @@
 
 @font-face { font-family: 'WisdomScriptAJ'; src: url("/vendor/WisdomScriptAJ.eot"); src: local("WisdomScriptAJ"), url("/vendor/WisdomScriptAJ.woff") format("woff"), url("/vendor/WisdomScriptAJ.ttf") format("truetype"); }
 
+h2 { font-size: 2.5rem; text-transform: uppercase; line-height: 4.375rem; font-family: "Montserrat", sans-serif; font-weight: 700; padding-top: 6.25rem; margin-bottom: 0; }
+
+h6 { font-family: "droid_serifitalic", serif; color: #777777; padding-bottom: 3.875rem; }
+
+h5 { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125rem; margin-bottom: 1.25rem; }
+
+h4 { font-family: "droid_serifitalic", serif; color: #777777; font-size: 0.875rem; }
+
+p { font-family: "Roboto Slab", serif; font-size: 0.875rem; color: #777777; }
+
+section { padding-bottom: 7.5rem; }
+
+/* navigation */
 .logo { font-family: "WisdomScriptAJ"; color: #fed136; font-size: 1.625rem; padding-bottom: 1rem; transition: 1s all; }
 
 .logo:hover { color: white; }
@@ -15,6 +28,7 @@
 
 .navbar-toggler-icon { color: white; }
 
+/* Jumbotron */
 .jumbotron { background-color: transparent; text-align: center; }
 
 .small-slogan { font-family: "droid_serifitalic", serif; color: white; font-size: 2.5rem; }
@@ -24,6 +38,37 @@
 .jumbotron .btn-primary { background-color: #fed136; border-color: #fed136; padding: 1.563rem 3.125rem; font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125rem; text-transform: uppercase; transition: 1s all; }
 
 .jumbotron .btn-primary:hover { background-color: white; color: #fed136; }
+
+/* services */
+.title { text-align: center; }
+
+.services-icon { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; margin-bottom: 1.563rem; }
+
+.circle { border: 0.1875rem solid #fed136; border-radius: 50%; width: 4.375rem; height: 4.375rem; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; position: relative; }
+
+.circle-icon-first { font-size: 2.25rem; color: #fed136; }
+
+.circle-icon-second { position: absolute; }
+
+.fa-check { top: 1.25rem; color: #fed136; }
+
+.fa-utensil-spoon { transform: rotate(-45deg); font-size: 0.75rem; bottom: 1.125rem; color: white; }
+
+.services-info { text-align: center; }
+
+.portfolio { background-color: #f7f7f7; }
+
+.card { width: 18rem; border: none; }
+
+.card-body { text-align: center; }
+
+.card-body h5 { margin-bottom: 0; }
+
+/* portfolio */
+.portfolio-break { margin-top: 3.125rem; }
+
+/* about us */
+.about-info { text-align: right; }
 
 @media (min-width: 992px) { .jumbotron { padding-top: 10.31rem; }
   .navbar-expand-lg .navbar-nav .nav-link { padding-left: 1.25rem; padding-right: 1.25rem; } }
