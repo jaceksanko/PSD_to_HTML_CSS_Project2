@@ -205,8 +205,157 @@ section {
 
 /* about us */
 
-.about-info {
+.about-info-left {
     text-align: right;
+    h5:first-child {
+        text-transform: uppercase;
+        margin-bottom: 0.625rem;
+    }
+}
+
+.about-info-right {
+    text-align: left;
+    h5:first-child {
+        text-transform: uppercase;
+        margin-bottom: 0.625rem;
+    }
+}
+
+.about-row {
+    margin-bottom: 5.938rem;
+}
+
+.continues {
+    width: 174px;
+    height: 174px;
+    border: 7px solid $grey-background;
+    background-color: $yellow-site;
+    color: white;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    h5 {
+        margin: 0;
+        text-transform: uppercase;
+        position: absolute;
+        text-align: center;
+        line-height: 30px;
+        padding: 20px;
+    }
+}
+
+/* continues button */
+
+.about-row-hiden {
+    display: none;
+}
+
+#continues-box:checked ~ div .about-row-hiden {
+    display: inline-flex;
+}
+
+/* End continues button */
+
+.team {
+    background-color: $grey-background;
+}
+
+
+.team_photo {
+    border: 7px solid white;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.team-text {
+    text-align: center;
+    h5 {
+        margin-top: 1.25rem;
+        margin-bottom: 0.5rem;
+    }    
+}
+
+
+.team-icon {
+    display: flex;
+    justify-content:center;
+    padding: 0 50px;
+}
+
+.circle-team-icon {
+    border: 3px solid rgb(34, 34, 34);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+.circle-team-twitter {
+    padding: 5px 11px;
+    transition: all 1s;
+    &:hover {
+        border-color: rgb(0, 172, 237);
+        background-color: rgb(0, 172, 237);
+        color: white;
+    }
+}
+
+.circle-team-fb {
+    padding: 5px 14px;
+    transition: all 1s;
+    &:hover {
+        border-color: rgb(59, 89, 152);
+        background-color: rgb(59, 89, 152);
+        color: white;
+    }
+}
+
+.circle-team-pin {
+    padding: 5px 13px;
+    transition: all 1s;
+    &:hover {
+        border-color: rgb(203, 32, 40);
+        background-color: rgb(203, 32, 40);
+        color: white;
+    }
+}
+
+.circle-team-gplus {
+    padding: 5px 8px;
+    transition: all 1s;
+    &:hover {
+        border-color: rgb(217, 82, 50);
+        background-color: rgb(217, 82, 50);
+        color: white;
+    }
+}
+
+.team-sentences {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logos {
+    padding: 60px 0;
+    text-align: center;
+    img {
+        margin: 0 10px;
+    }
+   
+}
+
+.contact {
+    background-color: black;
+    background-image: url('/images/map.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    h2 {
+        color: white;
+    }
 }
 
 

@@ -68,7 +68,63 @@ section { padding-bottom: 7.5rem; }
 .portfolio-break { margin-top: 3.125rem; }
 
 /* about us */
-.about-info { text-align: right; }
+.about-info-left { text-align: right; }
+
+.about-info-left h5:first-child { text-transform: uppercase; margin-bottom: 0.625rem; }
+
+.about-info-right { text-align: left; }
+
+.about-info-right h5:first-child { text-transform: uppercase; margin-bottom: 0.625rem; }
+
+.about-row { margin-bottom: 5.938rem; }
+
+.continues { width: 174px; height: 174px; border: 7px solid #f7f7f7; background-color: #fed136; color: white; border-radius: 50%; position: relative; cursor: pointer; }
+
+.continues h5 { margin: 0; text-transform: uppercase; position: absolute; text-align: center; line-height: 30px; padding: 20px; }
+
+/* continues button */
+.about-row-hiden { display: none; }
+
+#continues-box:checked ~ div .about-row-hiden { display: -ms-inline-flexbox; display: inline-flex; }
+
+/* End continues button */
+.team { background-color: #f7f7f7; }
+
+.team_photo { border: 7px solid white; border-radius: 50%; margin: 0 auto; }
+
+.team-text { text-align: center; }
+
+.team-text h5 { margin-top: 1.25rem; margin-bottom: 0.5rem; }
+
+.team-icon { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding: 0 50px; }
+
+.circle-team-icon { border: 3px solid #222222; border-radius: 50%; width: 45px; height: 45px; font-size: 18px; margin-right: 10px; margin-left: 10px; }
+
+.circle-team-twitter { padding: 5px 11px; transition: all 1s; }
+
+.circle-team-twitter:hover { border-color: #00aced; background-color: #00aced; color: white; }
+
+.circle-team-fb { padding: 5px 14px; transition: all 1s; }
+
+.circle-team-fb:hover { border-color: #3b5998; background-color: #3b5998; color: white; }
+
+.circle-team-pin { padding: 5px 13px; transition: all 1s; }
+
+.circle-team-pin:hover { border-color: #cb2028; background-color: #cb2028; color: white; }
+
+.circle-team-gplus { padding: 5px 8px; transition: all 1s; }
+
+.circle-team-gplus:hover { border-color: #d95232; background-color: #d95232; color: white; }
+
+.team-sentences { font-size: 1rem; text-align: center; margin-top: 50px; }
+
+.logos { padding: 60px 0; text-align: center; }
+
+.logos img { margin: 0 10px; }
+
+.contact { background-color: black; background-image: url("/images/map.png"); background-repeat: no-repeat; background-position: right top; }
+
+.contact h2 { color: white; }
 
 @media (min-width: 992px) { .jumbotron { padding-top: 10.31rem; }
   .navbar-expand-lg .navbar-nav .nav-link { padding-left: 1.25rem; padding-right: 1.25rem; } }
