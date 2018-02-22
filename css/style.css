@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto+Slab");
-@font-face { font-family: 'droid_serifitalic'; src: url("/vendor/DroidSerif-Italic-webfont.eot"); src: url("/vendor/DroidSerif-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("/vendor/DroidSerif-Italic-webfont.woff") format("woff"), url("/vendor/DroidSerif-Italic-webfont.ttf") format("truetype"); }
+@font-face { font-family: 'droid_serifitalic'; src: url("../vendor/DroidSerif-Italic-webfont.eot"); src: url("../vendor/DroidSerif-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../vendor/DroidSerif-Italic-webfont.woff") format("woff"), url("../vendor/DroidSerif-Italic-webfont.ttf") format("truetype"); }
 
-@font-face { font-family: 'WisdomScriptAJ'; src: url("/vendor/WisdomScriptAJ.eot"); src: local("WisdomScriptAJ"), url("/vendor/WisdomScriptAJ.woff") format("woff"), url("/vendor/WisdomScriptAJ.ttf") format("truetype"); }
+@font-face { font-family: 'WisdomScriptAJ'; src: url("../vendor/WisdomScriptAJ.eot"); src: local("WisdomScriptAJ"), url("../vendor/WisdomScriptAJ.woff") format("woff"), url("../vendor/WisdomScriptAJ.ttf") format("truetype"); }
 
 h2 { font-size: 2.5rem; text-transform: uppercase; line-height: 70px; font-family: "Montserrat", sans-serif; font-weight: 700; padding-top: 100px; margin-bottom: 0; }
 
@@ -22,7 +22,7 @@ section { padding-bottom: 120px; }
 
 .logo:hover { color: white; }
 
-.header { background-image: url("/images/BackgroundImage.png"); }
+.header { background-image: url("../images/BackgroundImage.png"); }
 
 .nav-link { color: white; font-family: "Montserrat", sans-serif; font-weight: 500; font-size: 0.875rem; text-transform: uppercase; transition: 1s all; }
 
@@ -52,9 +52,9 @@ section { padding-bottom: 120px; }
 
 .circle-icon-second { position: absolute; }
 
-.fa-check { top: 1.25rem; color: #fed136; }
+.fa-check { top: 20px; left: 23px; color: #fed136; }
 
-.fa-utensil-spoon { transform: rotate(-45deg); font-size: 0.75rem; bottom: 20px; color: white; }
+.fa-utensil-spoon { transform: rotate(-45deg); font-size: 0.75rem; bottom: 18px; color: white; }
 
 .services-info { text-align: center; }
 
@@ -128,7 +128,7 @@ section { padding-bottom: 120px; }
 
 .logos img { margin: 0 10px; }
 
-.contact { background-color: black; background-image: url("/images/map.png"); background-repeat: no-repeat; background-position: right top; }
+.contact { background-color: black; background-image: url("../images/map.png"); background-repeat: no-repeat; background-position: right top; }
 
 .contact h2 { color: white; }
 
