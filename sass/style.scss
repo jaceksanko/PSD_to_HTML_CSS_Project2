@@ -2,18 +2,18 @@
 
 @font-face {
     font-family: 'droid_serifitalic';
-    src: url('/vendor/DroidSerif-Italic-webfont.eot');
-    src: url('/vendor/DroidSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/vendor/DroidSerif-Italic-webfont.woff') format('woff'),
-         url('/vendor/DroidSerif-Italic-webfont.ttf') format('truetype'),
+    src: url('../vendor/DroidSerif-Italic-webfont.eot');
+    src: url('../vendor/DroidSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../vendor/DroidSerif-Italic-webfont.woff') format('woff'),
+         url('../vendor/DroidSerif-Italic-webfont.ttf') format('truetype'),
 }
 
 @font-face {
     font-family: 'WisdomScriptAJ';
-	src: url('/vendor/WisdomScriptAJ.eot');
+	src: url('../vendor/WisdomScriptAJ.eot');
     src: local('WisdomScriptAJ'), 
-    url('/vendor/WisdomScriptAJ.woff') format('woff'), 
-    url('/vendor/WisdomScriptAJ.ttf') format('truetype');
+    url('../vendor/WisdomScriptAJ.woff') format('woff'), 
+    url('../vendor/WisdomScriptAJ.ttf') format('truetype');
 };
 $font-logo: 'WisdomScriptAJ';
 $font-title: 'Montserrat', sans-serif;
@@ -82,7 +82,7 @@ section {
     }
 }
 .header {
-    background-image: url('/images/BackgroundImage.png');
+    background-image: url('../images/BackgroundImage.png');
 }
 
 .nav-link {
@@ -169,14 +169,15 @@ section {
 }
 
 .fa-check {
-    top:1.25rem;
+    top: 20px;
+    left: 23px;
     color: $yellow-site;
 }
 
 .fa-utensil-spoon {
     transform: rotate(-45deg);
     font-size: 0.75rem;
-    bottom: 20px;
+    bottom: 18px;
     color: white;
 }
 
@@ -366,7 +367,7 @@ section {
 
 .contact {
     background-color: black;
-    background-image: url('/images/map.png');
+    background-image: url('../images/map.png');
     background-repeat: no-repeat;
     background-position: right top;
     h2 {
