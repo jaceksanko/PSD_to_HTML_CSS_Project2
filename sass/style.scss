@@ -28,28 +28,34 @@ $grey-background: rgb(247, 247, 247);
 h2 {
     font-size: 2.5rem;
     text-transform: uppercase;
-    line-height: 4.375rem;
+    line-height: 70px;
     font-family: $font-title;
     font-weight: 700;
-    padding-top: 6.25rem;
+    padding-top: 100px;
     margin-bottom: 0;
 }
 
 h6 {
     font-family: $font-sub-title;
     color: $grey-site;
-    padding-bottom: 3.875rem;
+    padding-bottom: 62px;
 }
 
 h5 {
     font-family: $font-title;
     font-weight: 700;
     font-size: 1.125rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
 }
 
 h4 {
     font-family: $font-sub-title;
+    color: $grey-site;
+    font-size: 0.875rem;
+}
+
+h3 {
+    font-family: $font-title;
     color: $grey-site;
     font-size: 0.875rem;
 }
@@ -61,7 +67,7 @@ p {
 }
 
 section {
-    padding-bottom: 7.5rem;
+    padding-bottom: 120px;
 }
 
 /* navigation */
@@ -69,7 +75,7 @@ section {
     font-family: $font-logo;
     color: $yellow-site;
     font-size: 1.625rem;
-    padding-bottom: 1rem;
+    padding-bottom: 16px;
     transition: 1s all;
     &:hover {
         color: white;
@@ -117,7 +123,7 @@ section {
 .jumbotron .btn-primary {
     background-color: $yellow-site;
     border-color: $yellow-site;
-    padding: 1.563rem 3.125rem;
+    padding: 25px 50px;
     font-family: $font-title;
     font-weight: 700;
     font-size: 1.125rem;
@@ -139,14 +145,14 @@ section {
 .services-icon {
     display: flex;
     justify-content: center;
-    margin-bottom: 1.563rem;
+    margin-bottom: 25px;
 }
 
 .circle {
-    border: 0.1875rem solid $yellow-site;
+    border: 3px solid $yellow-site;
     border-radius: 50%;
-    width: 4.375rem;
-    height: 4.375rem;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +176,7 @@ section {
 .fa-utensil-spoon {
     transform: rotate(-45deg);
     font-size: 0.75rem;
-    bottom: 1.125rem;
+    bottom: 20px;
     color: white;
 }
 
@@ -185,7 +191,7 @@ section {
 }
 
 .card {
-    width: 18rem;
+    width: 288px;
     border: none;
 }
 
@@ -198,8 +204,13 @@ section {
 
 /* portfolio */
 
+.portfolio .container .row .col {
+    display: flex;
+    justify-content: center;
+}
+
 .portfolio-break {
-    margin-top: 3.125rem;
+    margin-top: 50px;
 }
 
 
@@ -209,7 +220,7 @@ section {
     text-align: right;
     h5:first-child {
         text-transform: uppercase;
-        margin-bottom: 0.625rem;
+        margin-bottom: 10px;
     }
 }
 
@@ -217,12 +228,17 @@ section {
     text-align: left;
     h5:first-child {
         text-transform: uppercase;
-        margin-bottom: 0.625rem;
+        margin-bottom: 10px;
     }
 }
 
 .about-row {
-    margin-bottom: 5.938rem;
+    margin-bottom: 95px;
+    justify-content: center;
+}
+
+.about .col-3 {
+    text-align: center;
 }
 
 .continues {
@@ -270,8 +286,8 @@ section {
 .team-text {
     text-align: center;
     h5 {
-        margin-top: 1.25rem;
-        margin-bottom: 0.5rem;
+        margin-top: 20px;
+        margin-bottom: 8px;
     }    
 }
 
@@ -287,7 +303,7 @@ section {
     border-radius: 50%;
     width: 45px;
     height: 45px;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-right: 10px;
     margin-left: 10px;
     
@@ -358,13 +374,116 @@ section {
     }
 }
 
+.contact-message {
+    height: 198px;
+}
+
+.contact .col  {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contact input, .contact textarea {
+    font-family: $font-title;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: $grey-background;
+}
+
+.contact  {
+    & input {
+        height: 50px;
+    }
+    & form {
+    text-align: center;
+    }
+    & .btn {
+        margin-top: 15px;
+        width: 240px;
+        height: 66px;
+        background-color: $yellow-site;
+        border-color: $yellow-site;
+        font-family: $font-title;
+        font-weight: 700;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        transition: 1s all;
+        &:hover {
+            background-color: white;
+            color: $yellow-site;
+    }
+    }
+}
+
+.footer-icon {
+    display: flex;
+    justify-content:center;
+    padding: 0 50px;
+}
+
+.circle-footer-icon {
+    border: 3px solid rgb(34, 34, 34);
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+.circle-footer-twitter {
+    padding: 5px 11px;
+    transition: all 1s;
+    &:hover {
+        border-color: rgb(0, 172, 237);
+        background-color: rgb(0, 172, 237);
+    }
+}
+
+.circle-footer-fb {
+    padding: 5px 14px;
+    transition: all 1s;
+    &:hover {
+        border-color: rgb(59, 89, 152);
+        background-color: rgb(59, 89, 152);
+    }
+}
+
+.circle-footer-pin {
+    padding: 5px 13px;
+    transition: all 1s;
+    &:hover {
+        border-color: rgb(203, 32, 40);
+        background-color: rgb(203, 32, 40);
+    }
+}
+
+.circle-footer-gplus {
+    padding: 5px 8px;
+    transition: all 1s;
+    &:hover {
+        border-color: rgb(217, 82, 50);
+        background-color: rgb(217, 82, 50);
+    }
+}
+
+.footer-copyright {
+    text-align: center;
+    & h3 {
+        line-height: 45px;
+    }
+}
+
 
 @media (min-width: 992px) { 
     .jumbotron {
-        padding-top: 10.31rem;
+        padding-top: 165px;
     }
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+        padding-left: 20px;
+        padding-right: 20px;
     }
  }

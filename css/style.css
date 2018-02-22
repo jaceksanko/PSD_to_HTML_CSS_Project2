@@ -1,366 +1,174 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto+Slab");
-@font-face {
-  font-family: 'droid_serifitalic';
-  src: url("/vendor/DroidSerif-Italic-webfont.eot");
-  src: url("/vendor/DroidSerif-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("/vendor/DroidSerif-Italic-webfont.woff") format("woff"), url("/vendor/DroidSerif-Italic-webfont.ttf") format("truetype");
-}
+@font-face { font-family: 'droid_serifitalic'; src: url("/vendor/DroidSerif-Italic-webfont.eot"); src: url("/vendor/DroidSerif-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("/vendor/DroidSerif-Italic-webfont.woff") format("woff"), url("/vendor/DroidSerif-Italic-webfont.ttf") format("truetype"); }
 
-@font-face {
-  font-family: 'WisdomScriptAJ';
-  src: url("/vendor/WisdomScriptAJ.eot");
-  src: local("WisdomScriptAJ"), url("/vendor/WisdomScriptAJ.woff") format("woff"), url("/vendor/WisdomScriptAJ.ttf") format("truetype");
-}
+@font-face { font-family: 'WisdomScriptAJ'; src: url("/vendor/WisdomScriptAJ.eot"); src: local("WisdomScriptAJ"), url("/vendor/WisdomScriptAJ.woff") format("woff"), url("/vendor/WisdomScriptAJ.ttf") format("truetype"); }
 
-h2 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  line-height: 4.375rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  padding-top: 6.25rem;
-  margin-bottom: 0;
-}
+h2 { font-size: 2.5rem; text-transform: uppercase; line-height: 70px; font-family: "Montserrat", sans-serif; font-weight: 700; padding-top: 100px; margin-bottom: 0; }
 
-h6 {
-  font-family: "droid_serifitalic", serif;
-  color: #777777;
-  padding-bottom: 3.875rem;
-}
+h6 { font-family: "droid_serifitalic", serif; color: #777777; padding-bottom: 62px; }
 
-h5 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 1.125rem;
-  margin-bottom: 1.25rem;
-}
+h5 { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125rem; margin-bottom: 20px; }
 
-h4 {
-  font-family: "droid_serifitalic", serif;
-  color: #777777;
-  font-size: 0.875rem;
-}
+h4 { font-family: "droid_serifitalic", serif; color: #777777; font-size: 0.875rem; }
 
-p {
-  font-family: "Roboto Slab", serif;
-  font-size: 0.875rem;
-  color: #777777;
-}
+h3 { font-family: "Montserrat", sans-serif; color: #777777; font-size: 0.875rem; }
 
-section {
-  padding-bottom: 7.5rem;
-}
+p { font-family: "Roboto Slab", serif; font-size: 0.875rem; color: #777777; }
+
+section { padding-bottom: 120px; }
 
 /* navigation */
-.logo {
-  font-family: "WisdomScriptAJ";
-  color: #fed136;
-  font-size: 1.625rem;
-  padding-bottom: 1rem;
-  transition: 1s all;
-}
+.logo { font-family: "WisdomScriptAJ"; color: #fed136; font-size: 1.625rem; padding-bottom: 16px; transition: 1s all; }
 
-.logo:hover {
-  color: white;
-}
+.logo:hover { color: white; }
 
-.header {
-  background-image: url("/images/BackgroundImage.png");
-}
+.header { background-image: url("/images/BackgroundImage.png"); }
 
-.nav-link {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  transition: 1s all;
-}
+.nav-link { color: white; font-family: "Montserrat", sans-serif; font-weight: 500; font-size: 0.875rem; text-transform: uppercase; transition: 1s all; }
 
-.nav-link:hover {
-  color: #fed136;
-}
+.nav-link:hover { color: #fed136; }
 
-.navbar-toggler-icon {
-  color: white;
-}
+.navbar-toggler-icon { color: white; }
 
 /* Jumbotron */
-.jumbotron {
-  background-color: transparent;
-  text-align: center;
-}
+.jumbotron { background-color: transparent; text-align: center; }
 
-.small-slogan {
-  font-family: "droid_serifitalic", serif;
-  color: white;
-  font-size: 2.5rem;
-}
+.small-slogan { font-family: "droid_serifitalic", serif; color: white; font-size: 2.5rem; }
 
-.big-slogan {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: white;
-  font-size: 4.688rem;
-}
+.big-slogan { font-family: "Montserrat", sans-serif; font-weight: 700; color: white; font-size: 4.688rem; }
 
-.jumbotron .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
-  padding: 1.563rem 3.125rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 1.125rem;
-  text-transform: uppercase;
-  transition: 1s all;
-}
+.jumbotron .btn-primary { background-color: #fed136; border-color: #fed136; padding: 25px 50px; font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125rem; text-transform: uppercase; transition: 1s all; }
 
-.jumbotron .btn-primary:hover {
-  background-color: white;
-  color: #fed136;
-}
+.jumbotron .btn-primary:hover { background-color: white; color: #fed136; }
 
 /* services */
-.title {
-  text-align: center;
-}
+.title { text-align: center; }
 
-.services-icon {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin-bottom: 1.563rem;
-}
+.services-icon { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; margin-bottom: 25px; }
 
-.circle {
-  border: 0.1875rem solid #fed136;
-  border-radius: 50%;
-  width: 4.375rem;
-  height: 4.375rem;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  position: relative;
-}
+.circle { border: 3px solid #fed136; border-radius: 50%; width: 70px; height: 70px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; position: relative; }
 
-.circle-icon-first {
-  font-size: 2.25rem;
-  color: #fed136;
-}
+.circle-icon-first { font-size: 2.25rem; color: #fed136; }
 
-.circle-icon-second {
-  position: absolute;
-}
+.circle-icon-second { position: absolute; }
 
-.fa-check {
-  top: 1.25rem;
-  color: #fed136;
-}
+.fa-check { top: 1.25rem; color: #fed136; }
 
-.fa-utensil-spoon {
-  transform: rotate(-45deg);
-  font-size: 0.75rem;
-  bottom: 1.125rem;
-  color: white;
-}
+.fa-utensil-spoon { transform: rotate(-45deg); font-size: 0.75rem; bottom: 20px; color: white; }
 
-.services-info {
-  text-align: center;
-}
+.services-info { text-align: center; }
 
-.portfolio {
-  background-color: #f7f7f7;
-}
+.portfolio { background-color: #f7f7f7; }
 
-.card {
-  width: 18rem;
-  border: none;
-}
+.card { width: 288px; border: none; }
 
-.card-body {
-  text-align: center;
-}
+.card-body { text-align: center; }
 
-.card-body h5 {
-  margin-bottom: 0;
-}
+.card-body h5 { margin-bottom: 0; }
 
 /* portfolio */
-.portfolio-break {
-  margin-top: 3.125rem;
-}
+.portfolio .container .row .col { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; }
+
+.portfolio-break { margin-top: 50px; }
 
 /* about us */
-.about-info-left {
-  text-align: right;
-}
+.about-info-left { text-align: right; }
 
-.about-info-left h5:first-child {
-  text-transform: uppercase;
-  margin-bottom: 0.625rem;
-}
+.about-info-left h5:first-child { text-transform: uppercase; margin-bottom: 10px; }
 
-.about-info-right {
-  text-align: left;
-}
+.about-info-right { text-align: left; }
 
-.about-info-right h5:first-child {
-  text-transform: uppercase;
-  margin-bottom: 0.625rem;
-}
+.about-info-right h5:first-child { text-transform: uppercase; margin-bottom: 10px; }
 
-.about-row {
-  margin-bottom: 5.938rem;
-}
+.about-row { margin-bottom: 95px; -ms-flex-pack: center; justify-content: center; }
 
-.continues {
-  width: 174px;
-  height: 174px;
-  border: 7px solid #f7f7f7;
-  background-color: #fed136;
-  color: white;
-  border-radius: 50%;
-  position: relative;
-  cursor: pointer;
-}
+.about .col-3 { text-align: center; }
 
-.continues h5 {
-  margin: 0;
-  text-transform: uppercase;
-  position: absolute;
-  text-align: center;
-  line-height: 30px;
-  padding: 20px;
-}
+.continues { width: 174px; height: 174px; border: 7px solid #f7f7f7; background-color: #fed136; color: white; border-radius: 50%; position: relative; cursor: pointer; }
+
+.continues h5 { margin: 0; text-transform: uppercase; position: absolute; text-align: center; line-height: 30px; padding: 20px; }
 
 /* continues button */
-.about-row-hiden {
-  display: none;
-}
+.about-row-hiden { display: none; }
 
-#continues-box:checked ~ div .about-row-hiden {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
+#continues-box:checked ~ div .about-row-hiden { display: -ms-inline-flexbox; display: inline-flex; }
 
 /* End continues button */
-.team {
-  background-color: #f7f7f7;
-}
+.team { background-color: #f7f7f7; }
 
-.team_photo {
-  border: 7px solid white;
-  border-radius: 50%;
-  margin: 0 auto;
-}
+.team_photo { border: 7px solid white; border-radius: 50%; margin: 0 auto; }
 
-.team-text {
-  text-align: center;
-}
+.team-text { text-align: center; }
 
-.team-text h5 {
-  margin-top: 1.25rem;
-  margin-bottom: 0.5rem;
-}
+.team-text h5 { margin-top: 20px; margin-bottom: 8px; }
 
-.team-icon {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  padding: 0 50px;
-}
+.team-icon { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding: 0 50px; }
 
-.circle-team-icon {
-  border: 3px solid #222222;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  font-size: 18px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
+.circle-team-icon { border: 3px solid #222222; border-radius: 50%; width: 45px; height: 45px; font-size: 1.125rem; margin-right: 10px; margin-left: 10px; }
 
-.circle-team-twitter {
-  padding: 5px 11px;
-  transition: all 1s;
-}
+.circle-team-twitter { padding: 5px 11px; transition: all 1s; }
 
-.circle-team-twitter:hover {
-  border-color: #00aced;
-  background-color: #00aced;
-  color: white;
-}
+.circle-team-twitter:hover { border-color: #00aced; background-color: #00aced; color: white; }
 
-.circle-team-fb {
-  padding: 5px 14px;
-  transition: all 1s;
-}
+.circle-team-fb { padding: 5px 14px; transition: all 1s; }
 
-.circle-team-fb:hover {
-  border-color: #3b5998;
-  background-color: #3b5998;
-  color: white;
-}
+.circle-team-fb:hover { border-color: #3b5998; background-color: #3b5998; color: white; }
 
-.circle-team-pin {
-  padding: 5px 13px;
-  transition: all 1s;
-}
+.circle-team-pin { padding: 5px 13px; transition: all 1s; }
 
-.circle-team-pin:hover {
-  border-color: #cb2028;
-  background-color: #cb2028;
-  color: white;
-}
+.circle-team-pin:hover { border-color: #cb2028; background-color: #cb2028; color: white; }
 
-.circle-team-gplus {
-  padding: 5px 8px;
-  transition: all 1s;
-}
+.circle-team-gplus { padding: 5px 8px; transition: all 1s; }
 
-.circle-team-gplus:hover {
-  border-color: #d95232;
-  background-color: #d95232;
-  color: white;
-}
+.circle-team-gplus:hover { border-color: #d95232; background-color: #d95232; color: white; }
 
-.team-sentences {
-  font-size: 1rem;
-  text-align: center;
-  margin-top: 50px;
-}
+.team-sentences { font-size: 1rem; text-align: center; margin-top: 50px; }
 
-.logos {
-  padding: 60px 0;
-  text-align: center;
-}
+.logos { padding: 60px 0; text-align: center; }
 
-.logos img {
-  margin: 0 10px;
-}
+.logos img { margin: 0 10px; }
 
-.contact {
-  background-color: black;
-  background-image: url("/images/map.png");
-  background-repeat: no-repeat;
-  background-position: right top;
-}
+.contact { background-color: black; background-image: url("/images/map.png"); background-repeat: no-repeat; background-position: right top; }
 
-.contact h2 {
-  color: white;
-}
+.contact h2 { color: white; }
 
-@media (min-width: 992px) {
-  .jumbotron {
-    padding-top: 10.31rem;
-  }
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+.contact-message { height: 198px; }
+
+.contact .col { margin-left: 10px; margin-right: 10px; }
+
+.contact input, .contact textarea { font-family: "Montserrat", sans-serif; font-size: 0.875rem; font-weight: 700; color: #f7f7f7; }
+
+.contact input { height: 50px; }
+
+.contact form { text-align: center; }
+
+.contact .btn { margin-top: 15px; width: 240px; height: 66px; background-color: #fed136; border-color: #fed136; font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125rem; text-transform: uppercase; transition: 1s all; }
+
+.contact .btn:hover { background-color: white; color: #fed136; }
+
+.footer-icon { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding: 0 50px; }
+
+.circle-footer-icon { border: 3px solid #222222; background-color: #222222; color: white; border-radius: 50%; width: 45px; height: 45px; font-size: 18px; margin-right: 10px; margin-left: 10px; }
+
+.circle-footer-twitter { padding: 5px 11px; transition: all 1s; }
+
+.circle-footer-twitter:hover { border-color: #00aced; background-color: #00aced; }
+
+.circle-footer-fb { padding: 5px 14px; transition: all 1s; }
+
+.circle-footer-fb:hover { border-color: #3b5998; background-color: #3b5998; }
+
+.circle-footer-pin { padding: 5px 13px; transition: all 1s; }
+
+.circle-footer-pin:hover { border-color: #cb2028; background-color: #cb2028; }
+
+.circle-footer-gplus { padding: 5px 8px; transition: all 1s; }
+
+.circle-footer-gplus:hover { border-color: #d95232; background-color: #d95232; }
+
+.footer-copyright { text-align: center; }
+
+.footer-copyright h3 { line-height: 45px; }
+
+@media (min-width: 992px) { .jumbotron { padding-top: 165px; }
+  .navbar-expand-lg .navbar-nav .nav-link { padding-left: 20px; padding-right: 20px; } }
