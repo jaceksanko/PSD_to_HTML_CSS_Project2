@@ -78,7 +78,7 @@ h5 { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125re
 .portfolio .container .row [class^="col"] { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; margin-top: 50px; }
 
 /* about us */
-.about-cart-title { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125rem; margin-top: 10px; margin-bottom: 0px; text-transform: uppercase; }
+.about-cart-title, .continues-box-title { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125rem; margin-top: 10px; margin-bottom: 0px; text-transform: uppercase; }
 
 .about-info-left { text-align: right; }
 
@@ -90,18 +90,18 @@ h5 { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125re
 
 .about-row { margin-bottom: 95px; -ms-flex-pack: center; justify-content: center; }
 
-.about .col-3 { text-align: center; }
+.about .col-md-3 { text-align: center; }
 
-.continues { width: 183px; height: 183px; border: 7px solid #f7f7f7; background-color: #fed136; color: white; border-radius: 50%; position: relative; cursor: pointer; }
+.continues { width: 183px; height: 183px; border: 7px solid #f7f7f7; background-color: #fed136; color: white; border-radius: 50%; position: relative; display: block; cursor: pointer; }
 
-.continues .about-cart-title { margin: 0; position: absolute; text-align: center; line-height: 30px; padding: 20px; padding-left: 25px; }
+.continues-box-title { margin: 0; text-align: center; line-height: 30px; padding: 20px; padding-left: 25px; }
 
 /* continues button */
 .about-row-hiden { display: none; }
 
 #continues-box:checked ~ div .about-row-hiden { display: -ms-inline-flexbox; display: inline-flex; animation: fadein 3s; }
 
-.vertical_line_2 { background-color: #f1f1f1; position: absolute; left: 45%; top: -60%; width: 3px; height: 500px; z-index: -1; animation: fadein 3s; }
+.vertical_line_2 { background-color: #f1f1f1; position: absolute; left: 115px; top: -110px; width: 3px; height: 500px; z-index: -1; animation: fadein 3s; }
 
 @keyframes fadein { from { opacity: 0; }
   to { opacity: 1; } }
@@ -109,10 +109,12 @@ h5 { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125re
 /* End continues button */
 .line { position: relative; }
 
-.vertical_line_1 { background-color: #f1f1f1; position: absolute; left: 105px; top: 100px; width: 3px; height: 1800px; z-index: -1; }
+.vertical_line_1 { background-color: #f1f1f1; position: absolute; left: 115px; top: 100px; width: 3px; height: 1800px; z-index: -1; }
 
 /* team */
 .team { background-color: #f7f7f7; }
+
+.team .col { margin-top: 20px; }
 
 .team-name { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125rem; margin-top: 20px; margin-bottom: 8px; }
 
@@ -178,6 +180,8 @@ h5 { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125re
 
 .contact .btn:hover { background-color: white; color: #fed136; }
 
+footer { padding-top: 20px; padding-bottom: 20px; }
+
 .footer-icon { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding: 0 50px; }
 
 .circle-footer-icon { border: 3px solid #222222; background-color: #222222; color: white; border-radius: 50%; width: 45px; height: 45px; font-size: 18px; margin-right: 10px; margin-left: 10px; }
@@ -213,7 +217,9 @@ h5 { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125re
   .about-row { margin: 0; }
   .team_photo { margin-top: 10px; } }
 
-@media (max-width: 992px) { section { padding-bottom: 20px; } }
+@media (max-width: 992px) { section { padding-bottom: 20px; }
+  .vertical_line_1 { left: 105px; top: 100px; height: 2100px; }
+  .vertical_line_2 { left: 105px; } }
 
 @media (min-width: 992px) { .jumbotron { padding-top: 150px; }
   .navbar-expand-lg .navbar-nav .nav-link { padding-left: 20px; padding-right: 20px; }

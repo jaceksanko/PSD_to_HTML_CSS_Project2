@@ -271,7 +271,7 @@ h5 {
     justify-content: center;
 }
 
-.about .col-3 {
+.about .col-md-3 {
     text-align: center;
 }
 
@@ -283,15 +283,18 @@ h5 {
     color: white;
     border-radius: 50%;
     position: relative;
+    display: block;
     cursor: pointer;
-    .about-cart-title {
-        margin: 0;
-        position: absolute;
-        text-align: center;
-        line-height: 30px;
-        padding: 20px;
-        padding-left: 25px;
-    }
+   
+}
+
+.continues-box-title {
+    @extend .about-cart-title;
+    margin: 0;
+    text-align: center;
+    line-height: 30px;
+    padding: 20px;
+    padding-left: 25px;
 }
 
 /* continues button */
@@ -308,8 +311,8 @@ h5 {
 .vertical_line_2 {
     background-color: rgb(241, 241, 241);
     position: absolute;
-    left: 45%;
-    top: -60%;
+    left: 115px;
+    top: -110px;
     width: 3px;
     height: 500px;
     z-index: -1;
@@ -329,7 +332,7 @@ h5 {
 .vertical_line_1 {
     background-color: rgb(241, 241, 241);
     position: absolute;
-    left: 105px;
+    left: 115px;
     top: 100px;
     width: 3px;
     height: 1800px;
@@ -340,7 +343,12 @@ h5 {
 
 .team {
     background-color: $grey-background;
+    .col {
+        margin-top: 20px;
+    }
 }
+
+
 
 .team-name {
     font-family: $font-title;
@@ -512,6 +520,11 @@ h5 {
     }
 }
 
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .footer-icon {
     display: flex;
     justify-content:center;
@@ -615,6 +628,17 @@ h5 {
 @media (max-width: 992px) {
     section {
         padding-bottom: 20px;
+    }
+
+    .vertical_line_1 {
+        left: 105px;
+        top: 100px;
+        height: 2100px;
+        
+      }
+
+    .vertical_line_2 {
+        left: 105px;
     }
 
 }
