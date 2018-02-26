@@ -18,27 +18,30 @@
 $font-logo: 'WisdomScriptAJ';
 $font-title: 'Montserrat', sans-serif;
 $font-sub-title: 'droid_serifitalic', serif;
-$font-paragtaph: 'Roboto Slab', serif;
+$font-paragraph: 'Roboto Slab', serif;
 
 
 $yellow-site:rgb(254, 209, 54);
 $grey-site: #777777;
 $grey-background: rgb(247, 247, 247);
 
-h2 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    line-height: 70px;
-    font-family: $font-title;
-    font-weight: 700;
-    padding-top: 100px;
-    margin-bottom: 0;
+section {
+    padding-bottom: 120px;
 }
 
-h6 {
-    font-family: $font-sub-title;
+h2 {
+    font-family: $font-title;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+}
+
+
+h3 {
+    font-family: $font-paragraph;
+    font-size: 0.875rem;
     color: $grey-site;
-    padding-bottom: 62px;
+    line-height: 21px;
 }
 
 h5 {
@@ -48,27 +51,45 @@ h5 {
     margin-bottom: 20px;
 }
 
-h4 {
+
+.title-section {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 70px;
+    font-family: $font-title;
+    font-weight: 700;
+    padding-top: 100px;
+    margin-bottom: 0;
+}
+
+.subtitle-section {
+    font-family: $font-sub-title;
+    color: $grey-site;
+    padding-bottom: 62px;
+}
+
+.subtitle-portfolio-card {
     font-family: $font-sub-title;
     color: $grey-site;
     font-size: 0.875rem;
 }
 
-h3 {
+.copyright-text {
     font-family: $font-title;
     color: $grey-site;
     font-size: 0.875rem;
 }
 
-p {
-    font-family: $font-paragtaph;
+.text-paragraph {
+    font-family: $font-paragraph;
     font-size: 0.875rem;
     color: $grey-site;
 }
 
-section {
-    padding-bottom: 120px;
+.container {
+    max-width: 940px;
 }
+
 
 /* navigation */
 .logo {
@@ -83,8 +104,13 @@ section {
 }
 .header {
     background-image: url('../images/BackgroundImage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.navbar {
+    padding-top: 20px;
+}
 .nav-link {
     color: white;
     font-family: $font-title;
@@ -117,7 +143,8 @@ section {
     font-family: $font-title;
     font-weight: 700;
     color: white;
-    font-size: 4.688rem;
+    font-size: 4.25rem;
+    text-transform: uppercase;
 }
 
 .jumbotron .btn-primary {
@@ -142,6 +169,10 @@ section {
     
 }
 
+.services .container {
+    padding-top: 10px;
+}
+
 .services-icon {
     display: flex;
     justify-content: center;
@@ -160,29 +191,26 @@ section {
 }
 
 
-.circle-icon-first {
-    font-size: 2.25rem;
-    color: $yellow-site;
-}
-.circle-icon-second {
-    position: absolute;
-}
-
-.fa-check {
-    top: 20px;
-    left: 23px;
-    color: $yellow-site;
-}
-
-.fa-utensil-spoon {
-    transform: rotate(-45deg);
-    font-size: 0.75rem;
-    bottom: 18px;
-    color: white;
-}
-
 .services-info {
     text-align: center;
+}
+
+.bg-Icon_Basket {
+    width: 39px; height: 38px;
+    background: url('../images/services_icon_sprites.png') -10px -10px;
+    
+}
+
+.bg-Icon_Laptop {
+    width: 40px; height: 34px;
+    background: url('../images/services_icon_sprites.png') -71px -10px;
+    
+}
+
+.bg-Icon_Locked {
+    width: 35px; height: 39px;
+    background: url('../images/services_icon_sprites.png') -7px -70px;
+    
 }
 
 
@@ -205,31 +233,36 @@ section {
 
 /* portfolio */
 
-.portfolio .container .row .col {
+.portfolio .container .row [class^="col"] {
     display: flex;
     justify-content: center;
-}
-
-.portfolio-break {
     margin-top: 50px;
 }
 
 
+
 /* about us */
+
+.about-cart-title {
+        font-family: $font-title;
+        font-weight: 700;
+        font-size: 1.125rem;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+}
 
 .about-info-left {
     text-align: right;
-    h5:first-child {
-        text-transform: uppercase;
-        margin-bottom: 10px;
+    h5 {
+        margin-top: 0px;
     }
 }
 
 .about-info-right {
     text-align: left;
-    h5:first-child {
-        text-transform: uppercase;
-        margin-bottom: 10px;
+    h5 {
+        margin-top: 0px;
     }
 }
 
@@ -243,21 +276,21 @@ section {
 }
 
 .continues {
-    width: 174px;
-    height: 174px;
+    width: 183px;
+    height: 183px;
     border: 7px solid $grey-background;
     background-color: $yellow-site;
     color: white;
     border-radius: 50%;
     position: relative;
     cursor: pointer;
-    h5 {
+    .about-cart-title {
         margin: 0;
-        text-transform: uppercase;
         position: absolute;
         text-align: center;
         line-height: 30px;
         padding: 20px;
+        padding-left: 25px;
     }
 }
 
@@ -269,14 +302,53 @@ section {
 
 #continues-box:checked ~ div .about-row-hiden {
     display: inline-flex;
+    animation: fadein 3s;
+}
+
+.vertical_line_2 {
+    background-color: rgb(241, 241, 241);
+    position: absolute;
+    left: 45%;
+    top: -60%;
+    width: 3px;
+    height: 500px;
+    z-index: -1;
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* End continues button */
+.line {
+    position: relative;
+}
+
+.vertical_line_1 {
+    background-color: rgb(241, 241, 241);
+    position: absolute;
+    left: 105px;
+    top: 100px;
+    width: 3px;
+    height: 1800px;
+    z-index: -1;
+  }
+
+  /* team */
 
 .team {
     background-color: $grey-background;
 }
 
+.team-name {
+    font-family: $font-title;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
 
 .team_photo {
     border: 7px solid white;
@@ -286,10 +358,6 @@ section {
 
 .team-text {
     text-align: center;
-    h5 {
-        margin-top: 20px;
-        margin-bottom: 8px;
-    }    
 }
 
 
@@ -311,7 +379,7 @@ section {
 }
 
 .circle-team-twitter {
-    padding: 5px 11px;
+    padding: 5px 8px;
     transition: all 1s;
     &:hover {
         border-color: rgb(0, 172, 237);
@@ -321,7 +389,7 @@ section {
 }
 
 .circle-team-fb {
-    padding: 5px 14px;
+    padding: 5px 8px;
     transition: all 1s;
     &:hover {
         border-color: rgb(59, 89, 152);
@@ -331,7 +399,7 @@ section {
 }
 
 .circle-team-pin {
-    padding: 5px 13px;
+    padding: 5px 8px;
     transition: all 1s;
     &:hover {
         border-color: rgb(203, 32, 40);
@@ -341,7 +409,7 @@ section {
 }
 
 .circle-team-gplus {
-    padding: 5px 8px;
+    padding: 5px 10px;
     transition: all 1s;
     &:hover {
         border-color: rgb(217, 82, 50);
@@ -360,17 +428,25 @@ section {
     padding: 60px 0;
     text-align: center;
     img {
-        margin: 0 10px;
+        margin: 10px;
+        padding: 3px;
+        height: 44px;
+        filter: grayscale(100%);
+        transition: all 1s;
+        &:hover {
+            filter: grayscale(0%);  
+        }
     }
-   
+
 }
 
 .contact {
-    background-color: black;
+    background-color: rgb(34, 34, 34);
     background-image: url('../images/map.png');
     background-repeat: no-repeat;
+    
     background-position: right top;
-    h2 {
+    .title-section {
         color: white;
     }
 }
@@ -388,8 +464,28 @@ section {
     font-family: $font-title;
     font-size: 0.875rem;
     font-weight: 700;
-    color: $grey-background;
 }
+
+.form-control::placeholder {
+    color: #bbbbbb;
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #bbbbbb;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+   color: #bbbbbb;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
 
 .contact  {
     & input {
@@ -412,7 +508,7 @@ section {
         &:hover {
             background-color: white;
             color: $yellow-site;
-    }
+        }
     }
 }
 
@@ -436,7 +532,7 @@ section {
 }
 
 .circle-footer-twitter {
-    padding: 5px 11px;
+    padding: 5px 8px;
     transition: all 1s;
     &:hover {
         border-color: rgb(0, 172, 237);
@@ -445,7 +541,7 @@ section {
 }
 
 .circle-footer-fb {
-    padding: 5px 14px;
+    padding: 5px 8px;
     transition: all 1s;
     &:hover {
         border-color: rgb(59, 89, 152);
@@ -454,7 +550,7 @@ section {
 }
 
 .circle-footer-pin {
-    padding: 5px 13px;
+    padding: 5px 8px;
     transition: all 1s;
     &:hover {
         border-color: rgb(203, 32, 40);
@@ -463,7 +559,7 @@ section {
 }
 
 .circle-footer-gplus {
-    padding: 5px 8px;
+    padding: 5px 10px;
     transition: all 1s;
     &:hover {
         border-color: rgb(217, 82, 50);
@@ -473,18 +569,67 @@ section {
 
 .footer-copyright {
     text-align: center;
-    & h3 {
+    .copyright-text {
         line-height: 45px;
     }
 }
 
+.mobile {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .vertical_line_1, .vertical_line_2 {
+        display: none;
+    }
+    .about-row {
+        text-align: center;
+    }
+    .about-info-left, .about-info-right {
+        text-align: center
+    }
+
+    .mobile {
+        display: block;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .col-md-3 img {
+        display: none;
+    }
+    section {
+        padding-bottom: 20px;
+    }
+    .about-row {
+        margin:0;
+    }
+    .team_photo {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+@media (max-width: 992px) {
+    section {
+        padding-bottom: 20px;
+    }
+
+}
 
 @media (min-width: 992px) { 
     .jumbotron {
-        padding-top: 165px;
+        padding-top: 150px;
     }
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .header {        
+        height: 700px;
+    }
+
  }
