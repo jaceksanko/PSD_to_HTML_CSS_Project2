@@ -7,13 +7,13 @@ section { padding-bottom: 120px; }
 
 h2 { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125rem; margin-bottom: 20px; }
 
-h3 { font-family: "Roboto Slab", serif; font-size: 0.875rem; color: #777777; line-height: 21px; }
+h3 { font-family: "droid_serifitalic", serif; color: #777777; padding-bottom: 62px; font-size: 1rem; }
+
+h4 { font-family: "Roboto Slab", serif; font-size: 0.875rem; color: #777777; line-height: 21px; }
 
 h5 { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125rem; margin-bottom: 20px; }
 
-.title-section { font-size: 2.5rem; text-transform: uppercase; line-height: 70px; font-family: "Montserrat", sans-serif; font-weight: 700; padding-top: 100px; margin-bottom: 0; }
-
-.subtitle-section { font-family: "droid_serifitalic", serif; color: #777777; padding-bottom: 62px; }
+.title-section { font-size: 2.5rem; text-transform: uppercase; line-height: 70px; padding-top: 100px; margin-bottom: 0; font-family: "Montserrat", sans-serif; ont-weight: 700; }
 
 .subtitle-portfolio-card { font-family: "droid_serifitalic", serif; color: #777777; font-size: 0.875rem; }
 
@@ -116,6 +116,8 @@ h5 { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125re
 
 .team .col { margin-top: 20px; }
 
+.mobile { display: none; }
+
 .team-name { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125rem; margin-top: 20px; margin-bottom: 8px; }
 
 .team_photo { border: 7px solid white; border-radius: 50%; margin: 0 auto; }
@@ -123,6 +125,8 @@ h5 { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125re
 .team-text { text-align: center; }
 
 .team-icon { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding: 0 50px; }
+
+.team-icon a { text-decoration: unset; color: inherit; }
 
 .circle-team-icon { border: 3px solid #222222; border-radius: 50%; width: 45px; height: 45px; font-size: 1.125rem; margin-right: 10px; margin-left: 10px; }
 
@@ -144,12 +148,14 @@ h5 { font-family: "Montserrat", sans-serif; font-weight: 700; font-size: 1.125re
 
 .team-sentences { font-size: 1rem; text-align: center; margin-top: 50px; }
 
+/* logos */
 .logos { padding: 60px 0; text-align: center; }
 
 .logos img { margin: 10px; padding: 3px; height: 44px; -webkit-filter: grayscale(100%); filter: grayscale(100%); transition: all 1s; }
 
 .logos img:hover { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
 
+/* contact */
 .contact { background-color: #222222; background-image: url("../images/map.png"); background-repeat: no-repeat; background-position: right top; }
 
 .contact .title-section { color: white; }
@@ -186,6 +192,8 @@ footer { padding-top: 20px; padding-bottom: 20px; }
 
 .circle-footer-icon { border: 3px solid #222222; background-color: #222222; color: white; border-radius: 50%; width: 45px; height: 45px; font-size: 18px; margin-right: 10px; margin-left: 10px; }
 
+.circle-footer-icon a { text-decoration: unset; color: inherit; }
+
 .circle-footer-twitter { padding: 5px 8px; transition: all 1s; }
 
 .circle-footer-twitter:hover { border-color: #00aced; background-color: #00aced; }
@@ -206,21 +214,22 @@ footer { padding-top: 20px; padding-bottom: 20px; }
 
 .footer-copyright .copyright-text { line-height: 45px; }
 
-.mobile { display: none; }
-
-@media (max-width: 767.98px) { .vertical_line_1, .vertical_line_2 { display: none; }
+@media (max-width: 767.98px) { section { padding-bottom: 20px; }
+  /* about */
+  .vertical_line_1, .vertical_line_2 { display: none; }
   .about-row { text-align: center; }
   .about-info-left, .about-info-right { text-align: center; }
   .mobile { display: block; -ms-flex-pack: center; justify-content: center; margin-bottom: 10px; }
   .col-md-3 img { display: none; }
-  section { padding-bottom: 20px; }
   .about-row { margin: 0; }
+  /* team */
   .team_photo { margin-top: 10px; } }
 
 @media (max-width: 992px) { section { padding-bottom: 20px; }
+  /* about */
   .vertical_line_1 { left: 105px; top: 100px; height: 2100px; }
   .vertical_line_2 { left: 105px; } }
 
-@media (min-width: 992px) { .jumbotron { padding-top: 150px; }
+@media (min-width: 992px) { .header { height: 700px; }
   .navbar-expand-lg .navbar-nav .nav-link { padding-left: 20px; padding-right: 20px; }
-  .header { height: 700px; } }
+  .jumbotron { padding-top: 150px; } }

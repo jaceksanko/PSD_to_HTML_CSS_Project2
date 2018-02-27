@@ -34,10 +34,17 @@ h2 {
     font-weight: 700;
     font-size: 1.125rem;
     margin-bottom: 20px;
+    
 }
 
-
 h3 {
+    font-family: $font-sub-title;
+    color: $grey-site;
+    padding-bottom: 62px;
+    font-size: 1rem;
+}
+
+h4 {
     font-family: $font-paragraph;
     font-size: 0.875rem;
     color: $grey-site;
@@ -51,22 +58,15 @@ h5 {
     margin-bottom: 20px;
 }
 
-
 .title-section {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    line-height: 70px;
-    font-family: $font-title;
-    font-weight: 700;
-    padding-top: 100px;
-    margin-bottom: 0;
-}
-
-.subtitle-section {
-    font-family: $font-sub-title;
-    color: $grey-site;
-    padding-bottom: 62px;
-}
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        line-height: 70px;
+        padding-top: 100px;
+        margin-bottom: 0;
+        font-family: $font-title;
+        ont-weight: 700;
+    }
 
 .subtitle-portfolio-card {
     font-family: $font-sub-title;
@@ -349,6 +349,10 @@ h5 {
 }
 
 
+.mobile {
+    display: none;
+}
+
 
 .team-name {
     font-family: $font-title;
@@ -373,6 +377,10 @@ h5 {
     display: flex;
     justify-content:center;
     padding: 0 50px;
+    a {
+        text-decoration: unset;
+        color: inherit;
+    }
 }
 
 .circle-team-icon {
@@ -432,6 +440,8 @@ h5 {
     margin-top: 50px;
 }
 
+/* logos */
+
 .logos {
     padding: 60px 0;
     text-align: center;
@@ -447,6 +457,8 @@ h5 {
     }
 
 }
+
+/* contact */
 
 .contact {
     background-color: rgb(34, 34, 34);
@@ -520,6 +532,8 @@ h5 {
     }
 }
 
+
+
 footer {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -541,6 +555,10 @@ footer {
     font-size: 18px;
     margin-right: 10px;
     margin-left: 10px;
+    a {
+        text-decoration: unset;
+        color: inherit;
+    }
     
 }
 
@@ -587,11 +605,14 @@ footer {
     }
 }
 
-.mobile {
-    display: none;
-}
-
 @media (max-width: 767.98px) {
+
+     section {
+        padding-bottom: 20px;
+    }
+    
+    /* about */
+
     .vertical_line_1, .vertical_line_2 {
         display: none;
     }
@@ -611,12 +632,13 @@ footer {
     .col-md-3 img {
         display: none;
     }
-    section {
-        padding-bottom: 20px;
-    }
+   
     .about-row {
         margin:0;
     }
+
+    /* team */
+
     .team_photo {
         margin-top: 10px;
     }
@@ -629,6 +651,8 @@ footer {
     section {
         padding-bottom: 20px;
     }
+
+    /* about */
 
     .vertical_line_1 {
         left: 105px;
@@ -644,16 +668,17 @@ footer {
 }
 
 @media (min-width: 992px) { 
-    .jumbotron {
-        padding-top: 150px;
-    }
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 
     .header {        
         height: 700px;
     }
 
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .jumbotron {
+        padding-top: 150px;
+    }
  }

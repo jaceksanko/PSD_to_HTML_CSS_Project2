@@ -13,8 +13,12 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
       <header class="header">
         <div class="container">
+
+          <!-- navigation -->
+
         <nav class="navbar navbar-expand-lg">                
           <a class="logo navbar-brand" href="index.html">Golden</a>
           <div class="navbar-dark">
@@ -42,6 +46,9 @@
             </ul>
           </div>
         </nav>
+
+        <!-- jumbotron -->
+
         <div>
           <div class="jumbotron">
             <p class="small-slogan">Welcome To Our Studio!</p>
@@ -51,12 +58,16 @@
             </p>
           </div>
         </div>
-        </div>
+        
+      </div>
       </header>
+
+      <!-- services -->
+
       <section class="services">
         <div class="title">
-          <p class="title-section">Services</p>
-          <p class="subtitle-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <h2 class="title-section">Services</h2>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
         </div>
         <div class="container">
         <div class="row">
@@ -69,9 +80,9 @@
             
             <div class="services-info">
               <h2>E-Commerce</h2>
-              <h3>
+              <h4>
                   Quisque eget consectetur nisi. Phasellus cursus sollicitudin eros, ut feugiat augue viverra vel. Vivamus feugiat metus efficitur mattis lobortis. Nulla sapien augue, mattis id erat sit amet, lobortis lobortis lacus.
-              </h3>
+              </h4>
             </div>
           </div>         
           <div class="col-md-4 col-sm-12">
@@ -82,9 +93,9 @@
             </div>
             <div class="services-info">
               <h2>Responsive Web</h2>
-              <h3>
+              <h4>
                 Quisque eget consectetur nisi. Phasellus cursus sollicitudin eros, ut feugiat augue viverra vel. Vivamus feugiat metus efficitur mattis lobortis. Nulla sapien augue, mattis id erat sit amet, lobortis lobortis lacus.
-              </h3>
+              </h4>
             </div>
           </div>      
           <div class="col-md-4 col-sm-12">
@@ -96,9 +107,9 @@
 
             <div class="services-info">
               <h2>Web Security</h2>
-              <h3>
+              <h4>
                   Quisque eget consectetur nisi. Phasellus cursus sollicitudin eros, ut feugiat augue viverra vel. Vivamus feugiat metus efficitur mattis lobortis. Nulla sapien augue, mattis id erat sit amet, lobortis lobortis lacus.
-              </h3>
+              </h4>
             </div>
           </div>
         </div> 
@@ -106,8 +117,8 @@
       </section>
       <section class="portfolio">
           <div class="title">
-              <p class="title-section">Our portfolio</p>
-              <p class="subtitle-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <h2 class="title-section">Our portfolio</h2>
+              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
           </div>
           <div class="container">
             <div class="row">
@@ -175,10 +186,13 @@
               </div>
           </div>
       </section>
+
+      <!-- about -->
+
       <section class="about">
         <div class="title">
-          <p class="title-section">About us</p>
-          <p class="subtitle-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <h2 class="title-section">About us</h2>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
         </div>
         <div class="container">
           <div class="line">
@@ -289,69 +303,71 @@
 
             <!-- continues button -->
 
-          <input type="checkbox" id="continues-box" hidden>
-          <div>
-          <div class="row about-row">
-            <div class="col-md-4">              
-            </div>
-            <div class="col-md-3">
-              
-              <label for="continues-box">
-                <span class="continues  continues-box-title">Our <br> Story <br> Continues <br> ...
-                </span>
-              </label>
-              
-              </div>
-            
-            <div class="col-md-4"></div>
-          </div>
-          
-         <div class="line">
-          <div class="row about-row about-row-hiden">
-            <div class="col-md-4 about-info-left">
-                <div class="mobile">
-                    <img src="images/about1.png" alt="About us photo 7">
-                  </div>
-              <p class="about-cart-title">July 2010</p>
-              <h5>Our Beginnings</h5>
-              <p class="text-paragraph">
-                Proin nec tortor nec nisl interdum hendrerit. Pellentesque at lacinia neque. Suspendisse dictum euismod eros at pulvinar. Donec ornare tincidunt purus, bibendum eleifend diam tincidunt eu.
-              </p>
-            </div>
-            <div class="col-md-3">
-              <img class="align-self-center" src="images/about1.png" alt="About us photo 7">
-              <div class="vertical_line_2"></div>
-            </div>
-            <div class="col-md-4 about-info-right"></div>
-          </div>
-
-          <div class="row about-row about-row-hiden">
-              <div class="col-md-4 about-info-left">
-                  <div class="mobile">
-                      <img src="images/about1.png" alt="About us photo 8">
-                    </div>
+          <input type="checkbox" id="continues-box" hidden>                
+          <div> <!-- Div necessary for input checkbox  -->
+            <div class="row about-row">
+              <div class="col-md-4">              
               </div>
               <div class="col-md-3">
-                <img class="align-self-center" src="images/about1.png" alt="About us photo 8">
+                
+                <label for="continues-box">
+                  <span class="continues  continues-box-title">Our <br> Story <br> Continues <br> ...
+                  </span> <!-- In this place must be span, not div because when you put div validation HTML take error -->
+                </label>
+                
+                </div>
+              
+              <div class="col-md-4"></div>
+            </div>
+          
+            <div class="line">
+              <div class="row about-row about-row-hiden">
+                <div class="col-md-4 about-info-left">
+                    <div class="mobile">
+                        <img src="images/about1.png" alt="About us photo 7">
+                      </div>
+                  <p class="about-cart-title">July 2010</p>
+                  <h5>Our Beginnings</h5>
+                  <p class="text-paragraph">
+                    Proin nec tortor nec nisl interdum hendrerit. Pellentesque at lacinia neque. Suspendisse dictum euismod eros at pulvinar. Donec ornare tincidunt purus, bibendum eleifend diam tincidunt eu.
+                  </p>
+                </div>
+                <div class="col-md-3">
+                  <img class="align-self-center" src="images/about1.png" alt="About us photo 7">
+                  <div class="vertical_line_2"></div>
+                </div>
+                <div class="col-md-4 about-info-right"></div>
               </div>
-              <div class="col-md-4 about-info-right">
-                <p class="about-cart-title">July 2010</p>
-                <h5>Our Beginnings</h5>
-                <p class="text-paragraph">
-                  Proin nec tortor nec nisl interdum hendrerit. Pellentesque at lacinia neque. Suspendisse dictum euismod eros at pulvinar. Donec ornare tincidunt purus, bibendum eleifend diam tincidunt eu.
-                </p>
+
+              <div class="row about-row about-row-hiden">
+                <div class="col-md-4 about-info-left">
+                    <div class="mobile">
+                        <img src="images/about1.png" alt="About us photo 8">
+                      </div>
+                </div>
+                <div class="col-md-3">
+                  <img class="align-self-center" src="images/about1.png" alt="About us photo 8">
+                </div>
+                <div class="col-md-4 about-info-right">
+                  <p class="about-cart-title">July 2010</p>
+                  <h5>Our Beginnings</h5>
+                  <p class="text-paragraph">
+                    Proin nec tortor nec nisl interdum hendrerit. Pellentesque at lacinia neque. Suspendisse dictum euismod eros at pulvinar. Donec ornare tincidunt purus, bibendum eleifend diam tincidunt eu.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
             <!-- End continues button -->
         </div>
       </section>
 
+      <!-- team -->
+
       <section class="team">
         <div class="title">
-          <p class="title-section">our amazing team</p>
-          <p class="subtitle-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <h2 class="title-section">our amazing team</h2>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
         </div>
         <div class="container">
           <div class="row">
@@ -364,63 +380,57 @@
                 <p class="team-name">Kimberly Thompson</p>
                 <p class="text-paragraph">Marketer</p>
               </div>
-                
-                    <div class="team-icon">
-                      <div class="circle-team-icon circle-team-twitter">
-                        <i class="icon-twitter"></i>
-                      </div>
-                    
-                      <div class="circle-team-icon circle-team-fb">
-                        <i class="icon-facebook"></i>
-                      </div>
-                      <div class="circle-team-icon circle-team-pin">
-                          <i class="icon-pinterest"></i>
-                      </div>
-                    </div>
+                <div class="team-icon">
+                  <div class="circle-team-icon circle-team-twitter">
+                    <a href="#"><i class="icon-twitter"></i></a> 
+                  </div>
+                  <div class="circle-team-icon circle-team-fb">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                  </div>
+                  <div class="circle-team-icon circle-team-pin">
+                    <a href="#"><i class="icon-pinterest"></i></a>
+                  </div>
+                </div>        
             </div>
             
             <div class="col">
-                <div class="text-center">
+              <div class="text-center">
                 <img class="team-photo" src="images/team2.jpg" alt="team photo 2">
-                </div>
-                <div class="team-text">
-                  <p class="team-name">Kimberly Thompson</p>
-                  <p class="text-paragraph">Coder</p>
-                </div>
-                  
-                      <div class="team-icon">
-                        <div class="circle-team-icon circle-team-twitter">
-                          <i class="icon-twitter"></i>
-                        </div>
-                      
-                        <div class="circle-team-icon circle-team-fb">
-                            <i class="icon-facebook"></i>
-                        </div>
-                        <div class="circle-team-icon circle-team-gplus">
-                            <i class="icon-gplus"></i>
-                        </div>
-                      </div>
               </div>
-           
-              <div class="col">
-                  <div class="text-center">
-                  <img class="team-photo" src="images/team3.jpg" alt="team photo 3">
+              <div class="team-text">
+                <p class="team-name">Kimberly Thompson</p>
+                <p class="text-paragraph">Coder</p>
+              </div>
+                <div class="team-icon">
+                  <div class="circle-team-icon circle-team-twitter">
+                    <a href="#"><i class="icon-twitter"></i></a>
                   </div>
-                  <div class="team-text">
-                    <p class="team-name">Kimberly Thompson</p>
-                    <p class="text-paragraph">Graphic Designer</p>
+                  <div class="circle-team-icon circle-team-fb">
+                    <a href="#"><i class="icon-facebook"></i></a>
                   </div>
-                    
-                        <div class="team-icon">
-                          <div class="circle-team-icon circle-team-fb">
-                            <i class="icon-facebook"></i>
-                          </div>
-                          <div class="circle-team-icon circle-team-pin">
-                            <i class="icon-pinterest"></i>
-                          </div>
-                        </div>
-                    
+                  <div class="circle-team-icon circle-team-gplus">
+                    <a href="#"><i class="icon-gplus"></i></a>
+                  </div>
                 </div>
+            </div>
+           
+            <div class="col">
+              <div class="text-center">
+                <img class="team-photo" src="images/team3.jpg" alt="team photo 3">
+              </div>
+              <div class="team-text">
+                <p class="team-name">Kimberly Thompson</p>
+                <p class="text-paragraph">Graphic Designer</p>
+              </div>
+              <div class="team-icon">
+                <div class="circle-team-icon circle-team-fb">
+                  <a href="#"><i class="icon-facebook"></i></a>
+                </div>
+                <div class="circle-team-icon circle-team-pin">
+                  <a href="#"><i class="icon-pinterest"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="row">
             <div class="col"></div>
@@ -434,6 +444,9 @@
           </div>
         </div>              
       </section>
+
+      <!-- Logos -->
+
       <section class="logos">
         <div class="container">
           <a href="https://envato.com" target="_blank"> <img src="images/Envato_Logo.png" alt="logo envato"></a>
@@ -443,10 +456,12 @@
         </div>
       </section>
 
+      <!-- contact -->
+
       <section class="contact">
         <div class="title">
-          <p class="title-section">Contact us</p>
-          <p class="subtitle-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <h2 class="title-section">Contact us</h2>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
         </div>
         <div class="container">
           <form>
@@ -472,6 +487,9 @@
           </form>
         </div>
       </section>
+
+      <!-- footer -->
+
       <footer>
         <div class="container">
           <div class="row">
@@ -481,16 +499,16 @@
             <div class="col-lg">
                 <div class="footer-icon">
                     <div class="circle-footer-icon circle-footer-twitter">
-                        <i class="icon-twitter"></i>
+                        <a href="#"><i class="icon-twitter"></i></a>
                     </div>
                     <div class="circle-footer-icon circle-footer-fb">
-                        <i class="icon-facebook"></i>
+                        <a href="#"><i class="icon-facebook"></i></a>
                     </div>
                     <div class="circle-footer-icon circle-footer-pin">
-                        <i class="icon-pinterest"></i>
+                        <a href="#"><i class="icon-pinterest"></i></a>
                     </div>
                     <div class="circle-footer-icon circle-footer-gplus">
-                        <i class="icon-gplus"></i>
+                        <a href="#"><i class="icon-gplus"></i></a>
                     </div>
                 </div>
             </div>
